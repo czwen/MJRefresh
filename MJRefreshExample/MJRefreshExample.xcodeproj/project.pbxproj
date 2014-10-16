@@ -34,6 +34,8 @@
 		2D9CAFC4192FAD9F0011F500 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CAFB6192FAD9F0011F500 /* MJRefreshConst.m */; };
 		2D9CAFC5192FAD9F0011F500 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CAFB8192FAD9F0011F500 /* MJRefreshFooterView.m */; };
 		2D9CAFC6192FAD9F0011F500 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CAFBA192FAD9F0011F500 /* MJRefreshHeaderView.m */; };
+		3D73799019EF70A2008DD9AF /* AMPActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D73798F19EF70A2008DD9AF /* AMPActivityIndicator.m */; };
+		3D73799619EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D73799519EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,10 @@
 		2D9CAFB8192FAD9F0011F500 /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
 		2D9CAFB9192FAD9F0011F500 /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
 		2D9CAFBA192FAD9F0011F500 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		3D73798E19EF70A2008DD9AF /* AMPActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPActivityIndicator.h; sourceTree = "<group>"; };
+		3D73798F19EF70A2008DD9AF /* AMPActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPActivityIndicator.m; sourceTree = "<group>"; };
+		3D73799419EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MJRefreshBaseView+CustomActivityIndicator.h"; path = "MJRefreshExample/MJRefreshBaseView+CustomActivityIndicator.h"; sourceTree = SOURCE_ROOT; };
+		3D73799519EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MJRefreshBaseView+CustomActivityIndicator.m"; path = "MJRefreshExample/MJRefreshBaseView+CustomActivityIndicator.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				2D9CAF9F192FAD9F0011F500 /* Classes */,
+				3D73799419EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.h */,
+				3D73799519EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.m */,
 				2D9CAFB0192FAD9F0011F500 /* MJRefresh */,
 				2D9CAF71192FAD750011F500 /* Supporting Files */,
 			);
@@ -237,6 +245,7 @@
 		2D9CAFB0192FAD9F0011F500 /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				3D73798D19EF70A2008DD9AF /* Indicator */,
 				2D9CAFB1192FAD9F0011F500 /* MJRefresh.bundle */,
 				2D9CAFB2192FAD9F0011F500 /* MJRefresh.h */,
 				2D9CAFB3192FAD9F0011F500 /* MJRefreshBaseView.h */,
@@ -255,6 +264,15 @@
 				2D1D8FB71935EACA0019D689 /* UIScrollView+MJExtension.m */,
 			);
 			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		3D73798D19EF70A2008DD9AF /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				3D73798E19EF70A2008DD9AF /* AMPActivityIndicator.h */,
+				3D73798F19EF70A2008DD9AF /* AMPActivityIndicator.m */,
+			);
+			path = Indicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +323,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = itcast;
 				TargetAttributes = {
+					2D9CAF66192FAD750011F500 = {
+						DevelopmentTeam = 6SBBC469XU;
+					};
 					2D9CAF87192FAD750011F500 = {
 						TestTargetID = 2D9CAF66192FAD750011F500;
 					};
@@ -365,10 +386,12 @@
 				2D9CAFC4192FAD9F0011F500 /* MJRefreshConst.m in Sources */,
 				2D9CAFC6192FAD9F0011F500 /* MJRefreshHeaderView.m in Sources */,
 				2D9CAFBB192FAD9F0011F500 /* MJCollectionViewController.m in Sources */,
+				3D73799019EF70A2008DD9AF /* AMPActivityIndicator.m in Sources */,
 				2D9CAFC1192FAD9F0011F500 /* MJAppDelegate.m in Sources */,
 				2D1D8FBC19360E040019D689 /* MJTestViewController.m in Sources */,
 				2D1D8FB21935C0CD0019D689 /* UIScrollView+MJRefresh.m in Sources */,
 				2D9CAFC3192FAD9F0011F500 /* MJRefreshBaseView.m in Sources */,
+				3D73799619EF7576008DD9AF /* MJRefreshBaseView+CustomActivityIndicator.m in Sources */,
 				2D9CAFC0192FAD9F0011F500 /* main.m in Sources */,
 				2D9CAFBC192FAD9F0011F500 /* MJNavigationController.m in Sources */,
 			);
@@ -487,11 +510,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJRefreshExample/MJRefreshExample-Prefix.pch";
 				INFOPLIST_FILE = "MJRefreshExample/MJRefreshExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,11 +527,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJRefreshExample/MJRefreshExample-Prefix.pch";
 				INFOPLIST_FILE = "MJRefreshExample/MJRefreshExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

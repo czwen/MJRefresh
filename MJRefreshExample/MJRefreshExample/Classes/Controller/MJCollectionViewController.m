@@ -18,7 +18,7 @@ NSString *const MJCollectionViewCellIdentifier = @"Cell";
 #import "MJCollectionViewController.h"
 #import "MJTestViewController.h"
 #import "MJRefresh.h"
-
+#import "MJRefreshBaseView+CustomActivityIndicator.h"
 @interface MJCollectionViewController ()
 /**
  *  存放假数据
@@ -69,6 +69,7 @@ NSString *const MJCollectionViewCellIdentifier = @"Cell";
     // 2.集成刷新控件
     [self addHeader];
     [self addFooter];
+    [MJRefreshBaseView customIndicatorWithBarHeight:5 andBarWidth:.5 andAperture:5 andThinColor:[UIColor greenColor] andBackgrounColor:nil];
 }
 
 /**
